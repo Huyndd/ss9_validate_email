@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate email</title>
+    <script src="email.js"></script>
+</head>
+<body>
+<script>
+    // email hợp lệ
+    var email = 'a@gmail.com';
+    console.log(invalid_Email(email));
+    var email = 'ab@gmail.com';
+    console.log(invalid_Email(email));
+    var email = 'abc@hotmail.com';
+    console.log(invalid_Email(email));
+    // email không hợp lệ
+    var email = '@gmail.com';
+    console.log(invalid_Email(email));
+    var email = 'ab@gmail.';
+    console.log(invalid_Email(email));
+    var email = '@#abc@gmail.com';
+    console.log(invalid_Email(email));
+</script>
+</body>
+</html>
